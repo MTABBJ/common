@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关闭小广告</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .qe_code {
+            width: 120px;
+            height: 120px;
+            /* margin: 100px auto; */
+            position: relative;
+        }
+
+        .qe_code img {
+            position: absolute;
+            right: 0;
+        }
+
+        .qe_code .close {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            border: 1px solid white;
+            text-align: center;
+            line-height: 18px;
+            cursor: pointer;
+            border-color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="qe_code">
+        <img src="./tou01.jpg" alt="广告图" class="code">
+        <span class="close">x</span>
+    </div>
+
+    <script>
+        var closeSpan = document.querySelector('.close');
+        var qe_code = document.querySelector('.qe_code');
+
+        closeSpan.onclick = function () {
+            qe_code.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

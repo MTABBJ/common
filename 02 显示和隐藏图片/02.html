@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">隐藏</button>
+    <br>
+    <img src="./images/tou01.jpg" alt="">
+    <script>
+        // 1. 获取事件源
+        var btn = document.querySelector('#btn');
+        var img = document.querySelectorAll('img')[0];
+        // var isShow = true;
+
+        // 2. 绑定事件
+        btn.onclick = function () {
+            // 3. 事件驱动程序
+            if (btn.innerHTML === '隐藏') {
+                img.style.display = 'none';
+                btn.innerHTML = '显示';
+                // isShow = false;
+            } else {
+                img.style.display = 'block';
+                btn.innerHTML = '隐藏';
+                // isShow = true;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
